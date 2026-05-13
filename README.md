@@ -1,4 +1,4 @@
-# Training program & principle for years 1-3
+# Training Program & Principles for years 1-3
 *Deadlift-Priority | Recovery-First | Late Novice → Early Intermediate*
 
 ---
@@ -19,9 +19,9 @@
 High neural drive is the primary performance asset. Evidence:
 
 - 60lb deadlift increase in first 3 months at stable bodyweight — pure neural acquisition
-- 2.0x bodyweight deadlift at month 9 under suboptimal programming and accidental cut
-- Pre-lift shaking, anticipatory arousal, memory blackout above RPE 8.5 — all signatures of high motor unit recruitment
-- Maximal effort sets require subcortical execution — conscious processing goes offline, grooved motor programs take over
+- 2.1x bodyweight deadlift at month 9 under suboptimal programming and accidental cut
+- Pre-lift tremors, anticipatory arousal, memory blackout above RPE 8.5 — all signatures of high motor unit recruitment
+- Maximal effort sets require subcortical execution — conscious processing goes offline, grooved motor programs take over, similar to Lee Royce
 - Post-heavy-deadlift CNS drain lasting 24-48 hours — neurochemical cost of high motor unit recruitment
 
 **Implication:** high neural drive means high fatigue cost per session. Standard programming underestimates this cost. Recovery requirements are above average.
@@ -30,15 +30,15 @@ High neural drive is the primary performance asset. Evidence:
 - Long femurs → more horizontal torso in conventional → longer moment arm on spine throughout pull
 - Wingspan ≈ height → average-to-slightly-disadvantaged arm length for deadlift ROM
 - Natural anterior chain deficit → chest essentially undeveloped pre-training
-- Natural posterior chain advantage → legs and back significantly developed pre-training
+- Natural posterior chain advantage → legs and back significantly developed pre-training (including quads)
 
-**Implication:** erectors and brace system face disproportionately high demand per rep. Lockout is the permanent weak point — structural, not fixable. The goal is pushing the threshold at which lockout failure appears as high as possible, not eliminating it.
+**Implication:** erectors and brace system face disproportionately high demand per rep. Lockout is the permanent weak point — structural, not fixable. The goal is pushing the threshold at which lockout failure appears as high as possible, not eliminating it. 
 
 ### Failure Pattern
 - Never fails off the floor
-- One midrange failure ever — at true supramaximal load (355x2 RPE 10)
+- One midrange failure ever — around month 6-7 
 - All other failures at lockout — consistent with leverage profile
-- Lockout grind involves knee re-bend as positional rescue → erector/brace failure, not glute failure
+- Lockout grind involves knee re-bend as positional rescue → erector/brace failure, not glute failure 
 - Only appears at RPE 7.5+ → threshold phenomenon, not a constant feature
 
 ---
@@ -53,13 +53,13 @@ High neural drive is the primary performance asset. Evidence:
 
 ### The Stall Pattern
 
-Stalls in training history have never been true adaptation plateaus. They have been fatigue accumulation events:
+Stalls in my training history have never been true adaptation plateaus yet, but have been fatigue accumulation events of the following:
 
 1. Training drives adaptation while fatigue accumulates
 2. Fatigue eventually exceeds recovery capacity
-3. Performance suppresses — looks like a plateau
-4. Full rest clears fatigue
-5. Accumulated adaptation expresses as a strength jump
+3. Performance stalls -> suppresses — looks like a plateau
+4. Full rest clears fatigue (whether that be forced by an illness or a planned cessation)
+5. Accumulated adaptation expresses as a strength jump 
 
 This has happened twice — months 6-9 and months 12-13 — both producing the largest strength jumps in training history. Both were accidental. The goal going forward is making this deliberate.
 
@@ -76,12 +76,12 @@ Fitness accumulates slowly and continuously. Fatigue accumulates fast and masks 
 ### Default Operating Cycle
 
 ```
-3 weeks loading → 5-7 days full rest → activation session → new block
+3-4 weeks loading → 5-8 days full rest → activation session → new block
 ```
 
 **Not a deload week. Not reduced training. Full cessation.**
 
-### Why 3 Weeks
+### Why 3-4 Weeks
 
 - Weeks 1-2: high quality adaptation, fatigue manageable
 - Week 3: RPE beginning to drift upward at same loads — early accumulation signal
@@ -98,7 +98,7 @@ Detraining timeline for reference:
 - Muscle mass: meaningful loss after ~3-4 weeks
 - Strength: detectable decline after ~2-3 weeks
 
-5-7 day rest blocks are well inside the safety window. Zero detraining occurs.
+5-8 day rest blocks are well inside the safety window. Zero detraining occurs.
 
 ### Week 3 Pre-Rest Intensification
 
@@ -112,17 +112,30 @@ In the final week before full rest, allow top sets to push to RPE 8-8.5 delibera
 
 | Set | Target RPE |
 |---|---|
-| Set 1 rep 1 | 6.5-7.0 |
+| Set 1 | 6.5-7.0 |
 | Set 2 | 7.0-7.5 |
 | Set 3 | 7.5 max (8.0-8.5 in week 3 only) |
 
-**Rep 1 of Set 1 is the only valid strength estimate in a session.** All subsequent reps and sets are contaminated by intra-set and inter-set fatigue. For e1RM estimation, only use rep 1 of the first top set.
+**Rep 1 of Set 1 is the only valid strength estimate in a session.** All subsequent reps and sets are contaminated by intra-set and inter-set fatigue (both which can be accelerated by misgrooves, ect). For e1RM estimation, only use rep 1 of the first top set (such as its velocity, concentric time, reset time).
+
+example on 5/12/26 week 1 first rep of the first top set of 335 x3 @ RPE 6.5
+- concentric time: ~1.0s
+- bar velocity: can be estiated thorugh concentric time but a more important feature is the velocity feature: no velocity disconnect / slower lockout, smooth continuous velocity over the entire ROM, rare for top set reps, for more difficult reps while speed may be similar there is almost always a disconnect and or signfiicantly slower lockout speed.
+
+- difference in speed between warm up and top sets rep 1: top set rep 1 same speed if not faster / more consistent velocity
+
+- time between reset: almost instantanious 
+- set feeling: easy, felt like repeating immediately after
+- label estimate / verdict: 335 is about ~78-82% 1RM for that day post sickness, stronger baseline than pre-sickness w/ accumulated fatigue over the past months.
+
+analysis done on video result: 
+<a href="https://www.instagram.com/p/DYP4uZwHSzL/?img_index=2"> 5/12/26 Week 1 </a> - a portion that an image-frame-modal ML can likely automate.
 
 ### RPE Calibration Signals
 
-**Jump urge at lockout** — subcortical signal of neural drive surplus. Strong urge = load well below ceiling, true RPE 6 or below. No urge = RPE 8+, approaching ceiling. This signal bypasses conscious RPE bias and is one of the most honest readiness indicators available.
+**Jump urge at lockout** — subcortical signal of neural drive surplus. Strong urge to jump w/ the weight = load well below ceiling, true RPE 6 or below. No urge = RPE 8+, approaching ceiling. This signal bypasses conscious RPE bias and is one of the most honest readiness indicators available.
 
-**Inter-set recovery time** — ready in under 3 minutes after top set → work capacity buffer is deep, load is genuinely submaximal. Needing 8-10 minutes → high fatigue cost, load is approaching ceiling.
+**Inter-set recovery time** — ready in under 3-5 minutes after top set → work capacity buffer is deep, load is genuinely submaximal. Needing 8-10 minutes → high fatigue cost, load is approaching ceiling.
 
 **Warmup feel** — if 60% feels like 70%, accumulated fatigue is present. The session's top set RPE will be artificially elevated regardless of load.
 
@@ -182,12 +195,10 @@ The pause is placed at the exact ROM position where the 80/20 disconnect begins 
 ### Structure Overview
 
 ```
-Day 1: Heavy Deadlift + Back + Chest A
+Day 1: Heavy Deadlift + Back + Chest A 
 Rest
 Day 2: Heavy Bench + Shoulders
-Rest
 Day 3: Leg Day (interference-minimized)
-Rest
 Day 4: Secondary / Deadlift Accessory + Chest C
 Rest x2
 Repeat
@@ -201,14 +212,13 @@ Microcycle averages slightly below 1x per week for each lift with autoregulation
 
 **Primary:**
 - Deadlift 2-3 sets, 1-3 reps, RPE 7-8.5
-- Weighted pull-ups 2-3 sets
+- Weighted pull-ups 2-3 sets / some sort of pull mechanic
 
 **Deadlift accessory:**
 - Paused-at-knee deadlift 2-3 singles at 60-65% — lockout pattern reinforcement, low fatigue cost
 
 **Chest A (post-pull, low fatigue context):**
-- DB press 3-4 sets, 10-12 reps, RPE 7-8 — no failure, system already fatigued from pulling
-- Pec deck or cable fly 2-3 sets, 12-15 reps, RPE 8 — optional failure on final set only
+- Pec deck or cable fly or db fly 2-3 sets, 12-15 reps, RPE 8 — optional failure on final set only
 
 **Isolation:**
 - Bicep curl 1-2 sets
@@ -282,14 +292,13 @@ Microcycle averages slightly below 1x per week for each lift with autoregulation
 
 | Session | Sets | Rep Range | To Failure? |
 |---|---|---|---|
-| Day 1 — DB press | 3-4 | 10-12 | No |
 | Day 1 — Pec deck | 2-3 | 12-15 | Final set optional |
 | Day 2 — DB/barbell press | 3-4 | 6-10 | No |
 | Day 2 — Pec deck | 3-4 | 12-15 | Final set yes |
 | Day 4 — Cable fly/pec deck | 3-4 | 12-15 | Final set yes |
-| **Weekly total** | **14-19 sets** | | |
+| **Weekly total** | **11-15 sets** | | |
 
-This sits in the accelerated hypertrophy range (12-20 sets/week) for an underdeveloped muscle group without requiring a 5th training day.
+This sits in about the accelerated hypertrophy range (12-20 sets/week) for an underdeveloped muscle group without requiring a 5th training day.
 
 ---
 
@@ -303,14 +312,14 @@ Pre-training muscular state was highly asymmetric:
 
 This produced a systematic anterior chain deficit that:
 - Limits bench press independent of neural drive
-- Creates an extreme deadlift-to-bench ratio (~2.3-2.5x current)
+- Creates an extreme deadlift-to-bench ratio (~2.3-2.5x current, aka the poverty bench)
 - Won't self-correct through standard pressing volume alone
 
 The fix is structural construction first, strength expression second.
 
 ### Why Higher Rep Range For Chest
 
-Current chest work at 6-8 reps optimizes for strength expression through existing tissue. The problem is there isn't enough existing tissue to express through. For an underdeveloped muscle:
+Current chest work at 6-8 reps optimizes for strength expression through existing tissue. The problem is there isn't enough existing tissue to express through. For an underdeveloped muscle (hence the stall ~185-205 strength):
 
 - 10-15 rep range generates more metabolic stress — primary hypertrophic driver in early-stage muscle development
 - Allows more volume per session without excessive fatigue
@@ -354,7 +363,7 @@ Back extensions and RDLs train the erectors dynamically through range of motion 
 
 ### Current Sufficiency
 
-At 405lb and 13 months of training, deadlift alone is still sufficient primary stimulus. Direct work is added as a **gap-filler** now to stay ahead of future demand as weights increase, not as an emergency fix. The load where deadlift-only erector training becomes inadequate is probably 450-500lb+ — approaching but not yet reached.
+At 405lb and 12 months of training, deadlift alone is still sufficient primary stimulus. Direct work is added as a **gap-filler** now to stay ahead of future demand as weights increase, not as an emergency fix. The load where deadlift-only erector training becomes inadequate is probably 450-500lb+ — approaching but not yet reached.
 
 ---
 
@@ -363,8 +372,15 @@ At 405lb and 13 months of training, deadlift alone is still sufficient primary s
 ### Current State (Month 13)
 - Bodyweight: ~173lb
 - e1RM estimate: 415-435lb (conservative — post-illness, underfed, compromised brace)
-- True tapered baseline: likely 455-475lb
+- True tapered baseline: likely +5-15
 - Relative strength: ~2.49x bodyweight
+- what happened during this unoptimal taper? the following:
+    - severe undereating for multiple days
+    - body is energetically occupied by a moderate respiratory illness instead of optimal MPS & neural recovery.
+    - significant loss of weight some of which may have been contractile tissue (0.5-1 pounds)
+    - severe emptying of glygogen stores 
+- Despite all of this, a noticably stronger baseline has been reached despite the fact that is my new E1RM baseline.
+
 
 ### Year 2 Projection (190-200lb)
 - e1RM range: 500-560lb depending on bulk execution and programming quality
@@ -379,7 +395,7 @@ At 405lb and 13 months of training, deadlift alone is still sufficient primary s
 ### Rate of Progress Timeline
 - **Current phase (months 13-24):** large jumps continue — neural drive still expressing, structural adaptation compounding with bulk
 - **Year 2-3 transition:** jumps shrink from ~10% to ~5-7% per rest cycle as work capacity develops
-- **Year 3+:** progress measured in months, 5lb per block becomes good progress, bulk becomes primary driver
+- **Year 3+:** progress measured in months, 5lb per block becomes good progress, bulk (via added contractile tissue) becomes primary driver
 
 ---
 
@@ -401,6 +417,6 @@ At 405lb and 13 months of training, deadlift alone is still sufficient primary s
 
 8. **The jump urge is your most honest RPE validator** — subcortical, pre-conscious, bypasses all cognitive bias
 
-9. **Neural drive is the primary asset** — anthropometry affects efficiency, neural drive sets the ceiling; you have the more important one
+9. **Neural drive is the primary asset** — anthropometry affects efficiency, neural drive sets the ceiling; which is the most important feature
 
-10. **Taper reveals, training builds** — the post-rest jump isn't new strength, it's accumulated strength finally expressing without suppression
+10. **Taper reveals, training builds** — the post-rest jump isn't new strength, it's accumulated strength finally expressing without suppression from fatigue
