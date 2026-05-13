@@ -1,4 +1,4 @@
-# Training Principles & Programming Guide
+# Training program & principle for years 1-3
 *Deadlift-Priority | Recovery-First | Late Novice → Early Intermediate*
 
 ---
