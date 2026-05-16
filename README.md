@@ -231,12 +231,12 @@ Microcycle averages slightly below 1x per week for each lift with autoregulation
 
 **Primary:**
 - DB press or barbell bench 3-4 sets, 6-10 reps, RPE 7-8
-- Seated DB press or machine shoulder press 2-3 sets, 10-12 reps
 
 **Chest B (primary hypertrophy stimulus):**
 - Pec deck or cable fly 3-4 sets, 12-15 reps, RPE 8 on sets 1-2, failure on final set
 
 **Shoulders:**
+- Seated DB press or machine shoulder press 2-3 sets, 10-12 reps
 - Lateral raises 2-3 sets, 12-15 reps
 
 **Isolation:**
@@ -260,6 +260,7 @@ Microcycle averages slightly below 1x per week for each lift with autoregulation
 
 **Optional:**
 - Abductor machine 2 sets
+- core
 
 **What is deliberately excluded:** heavy leg press, barbell squat, any axial loading. These generate erector and brace fatigue that competes directly with deadlift recovery. The leg day's second job — equal to stimulus — is to not compromise the next deadlift session.
 
@@ -267,19 +268,25 @@ Microcycle averages slightly below 1x per week for each lift with autoregulation
 
 ---
 
-### Day 4: Secondary / Deadlift Accessory + Chest C
+### Day 4: Secondary / Deadlift Accessory + Chest C (Lightest day)
 
 **Deadlift accessory (erector direct work):**
-- RDLs 2-3 sets, RPE 6 maximum — submaximal by design, direct erector + hamstring stimulus
+- ~~RDLs 2-3 sets, RPE 6 maximum — submaximal by design, direct erector + hamstring stimulus~~
 - Back extensions with light load 2-3 sets — direct erector hypertrophy, the primary gap in current erector training
 
 **Upper back:**
 - Pendlay rows or chest-supported rows 2-3 sets
-- Chin-ups or easy pull-up variant 2-3 sets
+- Chin-ups or easy pull-up variant 2-3 sets (Optional)
 
 **Chest C (machine/cable only — lowest fatigue):**
 - Cable fly or pec deck 3-4 sets, 12-15 reps — failure on final set appropriate here
 - Optional incline DB press 2-3 sets, 10-12 reps if energy allows
+
+**Isolation target**:
+* Bicep curls 3-4 sets 
+* Hammer curls 1-2 sets - brachialis and brachioradialis
+* Reverse curls 1-2 sets - forearm extensor gap
+* dead hang (optional)
 
 **Optional:**
 - Lateral raises or rear delt fly 1-2 sets
@@ -369,7 +376,7 @@ At 405lb and 12 months of training, deadlift alone is still sufficient primary s
 
 ## Long-Term Trajectory
 
-### Current State (Month 13)
+### Current State (Month 12.5)
 - Bodyweight: ~173lb
 - e1RM estimate: 415-435lb (conservative — post-illness, underfed, compromised brace)
 - True tapered baseline: likely +5-15
