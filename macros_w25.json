@@ -1,0 +1,2351 @@
+{
+  "metadata": {
+    "label": "Winter '25 Macros Log",
+    "period": "2026-01-09 to 2026-03-20",
+    "target_kcal": 4650,
+    "shake_macros": {
+      "kcal": 530,
+      "protein_g": 22,
+      "carb_g": 52,
+      "fat_g": 26
+    },
+    "bw_start_lbs": 170.8,
+    "bw_end_lbs": 175.9,
+    "notes": "Feb 29 entry is a typo in source data (2026 is not a leap year)",
+    "imputation_method": "avg_macro_ratio_from_complete_meals",
+    "imputation_ratios": {
+      "protein_g_per_kcal": 0.0526,
+      "carb_g_per_kcal": 0.116,
+      "fat_g_per_kcal": 0.0359
+    },
+    "stats": {
+      "n_days_total": 66,
+      "n_days_complete_log": 54,
+      "n_days_with_imputation": 12,
+      "kcal": {
+        "mean": 4240.1,
+        "std": 373.5,
+        "min": 3130,
+        "max": 5247,
+        "days_at_or_above_4000": 52,
+        "days_below_4000": 14,
+        "pct_at_or_above_4000": 78.8
+      },
+      "protein_g": {
+        "mean": 227.3,
+        "std": 36.3,
+        "min": 144.0,
+        "max": 375.0
+      },
+      "carb_g": {
+        "mean": 498.8,
+        "std": 65.2,
+        "min": 362.0,
+        "max": 680.0
+      },
+      "fat_g": {
+        "mean": 147.5,
+        "std": 27.5,
+        "min": 82.0,
+        "max": 206.0
+      },
+      "bodyweight_checkpoints_lbs": [
+        {
+          "date": "2026-01-09",
+          "bw_lbs": 170.8
+        },
+        {
+          "date": "2026-01-10",
+          "bw_lbs": 170.2
+        },
+        {
+          "date": "2026-01-29",
+          "bw_lbs": 172.2
+        },
+        {
+          "date": "2026-02-13",
+          "bw_lbs": 172.9
+        },
+        {
+          "date": "2026-02-19",
+          "bw_lbs": 173.9
+        },
+        {
+          "date": "2026-02-26",
+          "bw_lbs": 174.5
+        },
+        {
+          "date": "2026-03-20",
+          "bw_lbs": 175.9
+        }
+      ],
+      "bw_delta_lbs": 5.1
+    }
+  },
+  "days": [
+    {
+      "date": "2026-01-09",
+      "bw_lbs": 170.8,
+      "meals": [
+        {
+          "name": "All meals",
+          "kcal": 4100,
+          "shake": true,
+          "protein_g": 215.6,
+          "carb_g": 475.4,
+          "fat_g": 147.1,
+          "imputed": true
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4100,
+        "protein_g": 215.6,
+        "carb_g": 475.4,
+        "fat_g": 147.1,
+        "complete_log": false
+      }
+    },
+    {
+      "date": "2026-01-10",
+      "bw_lbs": 170.2,
+      "meals": [
+        {
+          "name": "Brunch (Carillo)",
+          "kcal": 1811,
+          "protein_g": 99,
+          "carb_g": 130,
+          "fat_g": 100
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2150,
+          "protein_g": 115,
+          "carb_g": 275,
+          "fat_g": 50
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4491,
+        "protein_g": 236.0,
+        "carb_g": 457.0,
+        "fat_g": 176.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-11",
+      "meals": [
+        {
+          "name": "Brunch (DLG)",
+          "kcal": 2026,
+          "protein_g": 93,
+          "carb_g": 151,
+          "fat_g": 108
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1826,
+          "protein_g": 86,
+          "carb_g": 243,
+          "fat_g": 46.5
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4382,
+        "protein_g": 201.0,
+        "carb_g": 446.0,
+        "fat_g": 180.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-12",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2384,
+          "protein_g": 118,
+          "carb_g": 297,
+          "fat_g": 72
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1500,
+          "protein_g": 104,
+          "carb_g": 142,
+          "fat_g": 51
+        },
+        {
+          "name": "Snack (Wingstop)",
+          "kcal": 450,
+          "protein_g": 18,
+          "carb_g": 40,
+          "fat_g": 28
+        },
+        {
+          "name": "Snack (Cheese chicken fries)",
+          "kcal": 400,
+          "protein_g": 10,
+          "carb_g": 30,
+          "fat_g": 18
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4734,
+        "protein_g": 250.0,
+        "carb_g": 509.0,
+        "fat_g": 169.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-13",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2077,
+          "protein_g": 127,
+          "carb_g": 175,
+          "fat_g": 89
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1706,
+          "protein_g": 106,
+          "carb_g": 200,
+          "fat_g": 51
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4313,
+        "protein_g": 255.0,
+        "carb_g": 427.0,
+        "fat_g": 166.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-14",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1967,
+          "protein_g": 142,
+          "carb_g": 191,
+          "fat_g": 66
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2088,
+          "protein_g": 110,
+          "carb_g": 222,
+          "fat_g": 82.5
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4055,
+        "protein_g": 252.0,
+        "carb_g": 413.0,
+        "fat_g": 148.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-15",
+      "meals": [
+        {
+          "name": "Lunch (Ortega + Panda)",
+          "kcal": 2201,
+          "protein_g": 110,
+          "carb_g": 220,
+          "fat_g": 104
+        },
+        {
+          "name": "Dinner",
+          "kcal": 1750,
+          "protein_g": 96,
+          "carb_g": 195,
+          "fat_g": 58
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3951,
+        "protein_g": 206.0,
+        "carb_g": 415.0,
+        "fat_g": 162.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-16",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1957,
+          "protein_g": 88,
+          "carb_g": 234,
+          "fat_g": 74
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2250,
+          "protein_g": 200,
+          "carb_g": 235,
+          "fat_g": 70
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4207,
+        "protein_g": 288.0,
+        "carb_g": 469.0,
+        "fat_g": 144.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "meals": [
+        {
+          "name": "Brunch (DLG)",
+          "kcal": 1990,
+          "protein_g": 116,
+          "carb_g": 125,
+          "fat_g": 99
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1764,
+          "protein_g": 74,
+          "carb_g": 250,
+          "fat_g": 45.5
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4284,
+        "protein_g": 212.0,
+        "carb_g": 427.0,
+        "fat_g": 170.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-18",
+      "meals": [
+        {
+          "name": "Brunch (Carillo)",
+          "kcal": 2209,
+          "protein_g": 114,
+          "carb_g": 208,
+          "fat_g": 101
+        },
+        {
+          "name": "Dinner",
+          "kcal": 2375,
+          "notes": "~2250-2500, macros mostly unknown",
+          "protein_g": 124.9,
+          "carb_g": 275.4,
+          "fat_g": 85.2,
+          "imputed": true
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4584,
+        "protein_g": 238.9,
+        "carb_g": 483.4,
+        "fat_g": 186.2,
+        "complete_log": false
+      }
+    },
+    {
+      "date": "2026-01-19",
+      "meals": [
+        {
+          "name": "Brunch (DLG)",
+          "kcal": 1564,
+          "protein_g": 63,
+          "carb_g": 127,
+          "fat_g": 88
+        },
+        {
+          "name": "Dinner",
+          "kcal": 1955,
+          "protein_g": 97,
+          "carb_g": 220,
+          "fat_g": 65
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4049,
+        "protein_g": 182.0,
+        "carb_g": 399.0,
+        "fat_g": 179.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1885,
+          "protein_g": 120,
+          "carb_g": 263,
+          "fat_g": 40
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2020,
+          "protein_g": 108,
+          "carb_g": 260,
+          "fat_g": 66.5
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3905,
+        "protein_g": 228.0,
+        "carb_g": 523.0,
+        "fat_g": 106.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-21",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1867,
+          "protein_g": 90,
+          "carb_g": 265,
+          "fat_g": 45.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1924,
+          "protein_g": 91,
+          "carb_g": 281,
+          "fat_g": 42
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4321,
+        "protein_g": 203.0,
+        "carb_g": 598.0,
+        "fat_g": 113.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2018,
+          "protein_g": 97,
+          "carb_g": 303,
+          "fat_g": 38
+        },
+        {
+          "name": "Dinner (Carillo)",
+          "kcal": 1819,
+          "protein_g": 115,
+          "carb_g": 259,
+          "fat_g": 44
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3837,
+        "protein_g": 212.0,
+        "carb_g": 562.0,
+        "fat_g": 82.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-23",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1948,
+          "protein_g": 136,
+          "carb_g": 165,
+          "fat_g": 82
+        },
+        {
+          "name": "Dinner (Chipotle)",
+          "kcal": 1905,
+          "protein_g": 112,
+          "carb_g": 222,
+          "fat_g": 62.3
+        },
+        {
+          "name": "Snack (fruit snacks x3)",
+          "kcal": 240,
+          "carb_g": 27.8,
+          "protein_g": 12.6,
+          "fat_g": 8.6,
+          "imputed": true
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4093,
+        "protein_g": 260.6,
+        "carb_g": 414.8,
+        "fat_g": 152.9,
+        "complete_log": false
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "meals": [
+        {
+          "name": "Brunch (DLG)",
+          "kcal": 2078,
+          "protein_g": 94,
+          "carb_g": 271,
+          "fat_g": 70.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1998,
+          "protein_g": 166,
+          "carb_g": 225,
+          "fat_g": 42
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4076,
+        "protein_g": 260.0,
+        "carb_g": 496.0,
+        "fat_g": 112.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-25",
+      "meals": [
+        {
+          "name": "Brunch (DLG)",
+          "kcal": 2068,
+          "protein_g": 80,
+          "carb_g": 272,
+          "fat_g": 70
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2100,
+          "protein_g": 130,
+          "carb_g": 261,
+          "fat_g": 60.5
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4698,
+        "protein_g": 232.0,
+        "carb_g": 585.0,
+        "fat_g": 156.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-26",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1651,
+          "protein_g": 75,
+          "carb_g": 230,
+          "fat_g": 42
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2550,
+          "protein_g": 111,
+          "carb_g": 272,
+          "fat_g": 115
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4201,
+        "protein_g": 186.0,
+        "carb_g": 502.0,
+        "fat_g": 157.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-27",
+      "meals": [
+        {
+          "name": "Lunch (Carillo)",
+          "kcal": 2515,
+          "protein_g": 146,
+          "carb_g": 425,
+          "fat_g": 66
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2732,
+          "protein_g": 155,
+          "carb_g": 255,
+          "fat_g": 120
+        }
+      ],
+      "daily_totals": {
+        "kcal": 5247,
+        "protein_g": 301.0,
+        "carb_g": 680.0,
+        "fat_g": 186.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1550,
+          "protein_g": 90,
+          "carb_g": 170,
+          "fat_g": 60
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2005,
+          "protein_g": 98,
+          "carb_g": 268,
+          "fat_g": 56.5
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3555,
+        "protein_g": 188.0,
+        "carb_g": 438.0,
+        "fat_g": 116.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "bw_lbs": 172.2,
+      "notes": "weight checkpoint",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2206,
+          "protein_g": 133,
+          "carb_g": 194,
+          "fat_g": 93.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2021,
+          "protein_g": 119,
+          "carb_g": 350,
+          "fat_g": 59.5
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4227,
+        "protein_g": 252.0,
+        "carb_g": 544.0,
+        "fat_g": 153.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-30",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2035,
+          "protein_g": 106,
+          "carb_g": 248,
+          "fat_g": 63.5
+        },
+        {
+          "name": "Dinner",
+          "kcal": 1921,
+          "protein_g": 104,
+          "carb_g": 215,
+          "fat_g": 71
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4486,
+        "protein_g": 232.0,
+        "carb_g": 515.0,
+        "fat_g": 160.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1810,
+          "protein_g": 91,
+          "carb_g": 182,
+          "fat_g": 78.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1629,
+          "protein_g": 112,
+          "carb_g": 195,
+          "fat_g": 40
+        },
+        {
+          "name": "Snack (Budhak quattro cheese noodles)",
+          "notes": "1.1x serving, kcal not recorded"
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3439,
+        "protein_g": 203.0,
+        "carb_g": 377.0,
+        "fat_g": 118.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "meals": [
+        {
+          "name": "Lunch (Carillo)",
+          "kcal": 2278,
+          "protein_g": 101,
+          "carb_g": 222,
+          "fat_g": 107.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1637,
+          "protein_g": 75,
+          "carb_g": 202,
+          "fat_g": 50
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4445,
+        "protein_g": 198.0,
+        "carb_g": 476.0,
+        "fat_g": 183.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-02",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1770,
+          "protein_g": 104,
+          "carb_g": 208,
+          "fat_g": 57.5
+        },
+        {
+          "name": "Dinner (Carillo)",
+          "kcal": 2434,
+          "protein_g": 122,
+          "carb_g": 324,
+          "fat_g": 62.5
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4204,
+        "protein_g": 226.0,
+        "carb_g": 532.0,
+        "fat_g": 120.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-03",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 3083,
+          "protein_g": 164,
+          "carb_g": 408,
+          "fat_g": 116,
+          "notes": "highest kcal meal recorded"
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1636,
+          "protein_g": 96,
+          "carb_g": 225,
+          "fat_g": 45
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4719,
+        "protein_g": 260.0,
+        "carb_g": 633.0,
+        "fat_g": 161.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-04",
+      "meals": [
+        {
+          "name": "Lunch (Ortega + Panda)",
+          "kcal": 2139,
+          "protein_g": 136.7,
+          "carb_g": 229,
+          "fat_g": 78.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1400,
+          "protein_g": 93,
+          "carb_g": 280,
+          "fat_g": 23
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4069,
+        "protein_g": 251.7,
+        "carb_g": 561.0,
+        "fat_g": 127.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-05",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2445,
+          "protein_g": 111,
+          "carb_g": 316,
+          "fat_g": 96
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1973,
+          "protein_g": 95,
+          "carb_g": 226,
+          "fat_g": 71
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4418,
+        "protein_g": 206.0,
+        "carb_g": 542.0,
+        "fat_g": 167.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-06",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2332,
+          "protein_g": 144,
+          "carb_g": 218,
+          "fat_g": 80.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1848,
+          "protein_g": 92.77,
+          "carb_g": 300,
+          "fat_g": 27
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4180,
+        "protein_g": 236.8,
+        "carb_g": 518.0,
+        "fat_g": 107.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "meals": [
+        {
+          "name": "Brunch (Carillo)",
+          "kcal": 2063,
+          "protein_g": 81,
+          "carb_g": 214,
+          "fat_g": 95
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2180,
+          "protein_g": 107,
+          "carb_g": 275,
+          "fat_g": 67.5
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4243,
+        "protein_g": 188.0,
+        "carb_g": 489.0,
+        "fat_g": 162.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "meals": [
+        {
+          "name": "Brunch (DLG)",
+          "kcal": 1791,
+          "protein_g": 75,
+          "carb_g": 200,
+          "fat_g": 71
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2565,
+          "protein_g": 145.5,
+          "carb_g": 292.5,
+          "fat_g": 88
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4356,
+        "protein_g": 220.5,
+        "carb_g": 492.5,
+        "fat_g": 159.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-09",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1910,
+          "protein_g": 133,
+          "carb_g": 200,
+          "fat_g": 58.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2000,
+          "notes": "~2000, more carb dominant, not fully logged",
+          "protein_g": 105.2,
+          "carb_g": 231.9,
+          "fat_g": 71.8,
+          "imputed": true
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3910,
+        "protein_g": 238.2,
+        "carb_g": 431.9,
+        "fat_g": 130.3,
+        "complete_log": false
+      }
+    },
+    {
+      "date": "2026-02-10",
+      "notes": "sick",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2526,
+          "protein_g": 139,
+          "carb_g": 302,
+          "fat_g": 71
+        },
+        {
+          "name": "Dinner (Carillo)",
+          "kcal": 1823,
+          "protein_g": 102,
+          "carb_g": 218,
+          "fat_g": 60
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4349,
+        "protein_g": 241.0,
+        "carb_g": 520.0,
+        "fat_g": 131.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "meals": [
+        {
+          "name": "Lunch (Carillo)",
+          "kcal": 2118,
+          "protein_g": 131,
+          "carb_g": 335,
+          "fat_g": 44
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1863,
+          "protein_g": 60,
+          "carb_g": 250,
+          "fat_g": 47.5
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3981,
+        "protein_g": 191.0,
+        "carb_g": 585.0,
+        "fat_g": 91.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2900,
+          "protein_g": 163,
+          "carb_g": 330,
+          "fat_g": 99
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1439,
+          "protein_g": 77,
+          "carb_g": 200,
+          "fat_g": 29
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4339,
+        "protein_g": 240.0,
+        "carb_g": 530.0,
+        "fat_g": 128.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "bw_lbs": 172.9,
+      "notes": "weight checkpoint 172.8-173.0",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2150,
+          "protein_g": 115,
+          "carb_g": 285,
+          "fat_g": 47.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2785,
+          "protein_g": 260,
+          "carb_g": 300,
+          "fat_g": 99
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4935,
+        "protein_g": 375.0,
+        "carb_g": 585.0,
+        "fat_g": 146.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2011,
+          "protein_g": 112,
+          "carb_g": 198,
+          "fat_g": 87
+        },
+        {
+          "name": "Dinner (McDonald's)",
+          "kcal": 2060,
+          "protein_g": 94,
+          "carb_g": 196,
+          "fat_g": 105
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4071,
+        "protein_g": 206.0,
+        "carb_g": 394.0,
+        "fat_g": 192.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "meals": [
+        {
+          "name": "Brunch (DLG)",
+          "kcal": 1714,
+          "protein_g": 94,
+          "carb_g": 203,
+          "fat_g": 58
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        },
+        {
+          "name": "Dinner (9 tacos)",
+          "kcal": 1815,
+          "protein_g": 116,
+          "carb_g": 190,
+          "fat_g": 72
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4059,
+        "protein_g": 232.0,
+        "carb_g": 445.0,
+        "fat_g": 156.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-16",
+      "meals": [
+        {
+          "name": "Brunch",
+          "kcal": 2400,
+          "protein_g": 106,
+          "carb_g": 297,
+          "fat_g": 99
+        },
+        {
+          "name": "Dinner",
+          "kcal": 1750,
+          "carb_g": 202.9,
+          "notes": "~1700-1800, forgot to log",
+          "protein_g": 92.0,
+          "fat_g": 62.8,
+          "imputed": true
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4150,
+        "protein_g": 198.0,
+        "carb_g": 499.9,
+        "fat_g": 161.8,
+        "complete_log": false
+      }
+    },
+    {
+      "date": "2026-02-17",
+      "meals": [
+        {
+          "name": "Lunch (Ortega + Panda)",
+          "kcal": 2196,
+          "protein_g": 85,
+          "carb_g": 250,
+          "fat_g": 100
+        },
+        {
+          "name": "Dinner (Portola)",
+          "kcal": 2616,
+          "protein_g": 144,
+          "carb_g": 374,
+          "fat_g": 50
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4812,
+        "protein_g": 229.0,
+        "carb_g": 624.0,
+        "fat_g": 150.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-18",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2144,
+          "protein_g": 98,
+          "carb_g": 254,
+          "fat_g": 75
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1855,
+          "protein_g": 60,
+          "carb_g": 256,
+          "fat_g": 61.5
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3999,
+        "protein_g": 158.0,
+        "carb_g": 510.0,
+        "fat_g": 136.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "bw_lbs": 173.9,
+      "notes": "weight checkpoint",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2090,
+          "protein_g": 114,
+          "carb_g": 275.5,
+          "fat_g": 60
+        },
+        {
+          "name": "Dinner (Ortega + Panda)",
+          "kcal": 2266,
+          "protein_g": 86,
+          "carb_g": 250,
+          "fat_g": 109
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4356,
+        "protein_g": 200.0,
+        "carb_g": 525.5,
+        "fat_g": 169.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-20",
+      "notes": "sick",
+      "meals": [
+        {
+          "name": "Lunch (Carillo)",
+          "kcal": 2400,
+          "protein_g": 91,
+          "carb_g": 260,
+          "fat_g": 106
+        },
+        {
+          "name": "Dinner (Wendy's)",
+          "kcal": 1850,
+          "protein_g": 96,
+          "carb_g": 200,
+          "fat_g": 100
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4250,
+        "protein_g": 187.0,
+        "carb_g": 460.0,
+        "fat_g": 206.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "notes": "sick",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1630,
+          "protein_g": 100,
+          "carb_g": 155,
+          "fat_g": 72.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1850,
+          "protein_g": 108,
+          "carb_g": 207,
+          "fat_g": 55,
+          "notes": "may not be accurate"
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3480,
+        "protein_g": 208.0,
+        "carb_g": 362.0,
+        "fat_g": 127.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "meals": [
+        {
+          "name": "Brunch (Carillo)",
+          "kcal": 2089,
+          "protein_g": 83,
+          "carb_g": 243,
+          "fat_g": 84
+        },
+        {
+          "name": "Dinner (Carillo)",
+          "kcal": 1755,
+          "protein_g": 111,
+          "carb_g": 320,
+          "fat_g": 30
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3844,
+        "protein_g": 194.0,
+        "carb_g": 563.0,
+        "fat_g": 114.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-23",
+      "meals": [
+        {
+          "name": "Lunch (Carillo)",
+          "kcal": 1915,
+          "protein_g": 100,
+          "carb_g": 261,
+          "fat_g": 52
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 3250,
+          "protein_g": 144,
+          "carb_g": 325,
+          "fat_g": 144
+        }
+      ],
+      "daily_totals": {
+        "kcal": 5165,
+        "protein_g": 244.0,
+        "carb_g": 586.0,
+        "fat_g": 196.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-24",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1865,
+          "protein_g": 104,
+          "carb_g": 190,
+          "fat_g": 59.8
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1871,
+          "protein_g": 98,
+          "carb_g": 205,
+          "fat_g": 71
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4266,
+        "protein_g": 224.0,
+        "carb_g": 447.0,
+        "fat_g": 156.8,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-25",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2202,
+          "protein_g": 118,
+          "carb_g": 209,
+          "fat_g": 101
+        },
+        {
+          "name": "Dinner (Panda Express)",
+          "kcal": 2000,
+          "notes": "~2000",
+          "protein_g": 105.2,
+          "carb_g": 231.9,
+          "fat_g": 71.8,
+          "imputed": true
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4202,
+        "protein_g": 223.2,
+        "carb_g": 440.9,
+        "fat_g": 172.8,
+        "complete_log": false
+      }
+    },
+    {
+      "date": "2026-02-26",
+      "bw_lbs": 174.5,
+      "notes": "174.5 base, 178-179 peak; look leaner and more defined than ever",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1950,
+          "protein_g": 87,
+          "carb_g": 260,
+          "fat_g": 61.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2066,
+          "protein_g": 111,
+          "carb_g": 293,
+          "fat_g": 49
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4016,
+        "protein_g": 198.0,
+        "carb_g": 553.0,
+        "fat_g": 110.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-27",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1959,
+          "protein_g": 128,
+          "carb_g": 233,
+          "fat_g": 51.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1934,
+          "protein_g": 94,
+          "carb_g": 261,
+          "fat_g": 55.5
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4423,
+        "protein_g": 244.0,
+        "carb_g": 546.0,
+        "fat_g": 133.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "meals": [
+        {
+          "name": "Brunch (Carillo)",
+          "kcal": 2212,
+          "protein_g": 87,
+          "carb_g": 280,
+          "fat_g": 82.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2000,
+          "notes": "~2000, same average macro proportions",
+          "protein_g": 105.2,
+          "carb_g": 231.9,
+          "fat_g": 71.8,
+          "imputed": true
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4212,
+        "protein_g": 192.2,
+        "carb_g": 511.9,
+        "fat_g": 154.3,
+        "complete_log": false
+      }
+    },
+    {
+      "date": "2026-02-29",
+      "notes": "Feb 29 does not exist in 2026 \u2014 likely 3/1 or data entry error",
+      "meals": [
+        {
+          "name": "Lunch (Carillo)",
+          "kcal": 2308,
+          "protein_g": 118,
+          "carb_g": 250,
+          "fat_g": 90
+        },
+        {
+          "name": "Dinner",
+          "kcal": 1800,
+          "notes": "~1800",
+          "protein_g": 94.7,
+          "carb_g": 208.7,
+          "fat_g": 64.6,
+          "imputed": true
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4108,
+        "protein_g": 212.7,
+        "carb_g": 458.7,
+        "fat_g": 154.6,
+        "complete_log": false
+      }
+    },
+    {
+      "date": "2026-03-04",
+      "meals": [
+        {
+          "name": "Lunch (Portola)",
+          "kcal": 2500,
+          "protein_g": 140,
+          "carb_g": 284,
+          "fat_g": 108
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1800,
+          "notes": "~1800",
+          "protein_g": 94.7,
+          "carb_g": 208.7,
+          "fat_g": 64.6,
+          "imputed": true
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4300,
+        "protein_g": 234.7,
+        "carb_g": 492.7,
+        "fat_g": 172.6,
+        "complete_log": false
+      }
+    },
+    {
+      "date": "2026-03-05",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2029,
+          "protein_g": 102,
+          "carb_g": 252,
+          "fat_g": 64.5
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1872,
+          "protein_g": 80,
+          "carb_g": 278,
+          "fat_g": 41.5
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3901,
+        "protein_g": 182.0,
+        "carb_g": 530.0,
+        "fat_g": 106.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-03-06",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2720,
+          "protein_g": 155,
+          "carb_g": 325,
+          "fat_g": 78
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1559,
+          "protein_g": 94,
+          "carb_g": 230,
+          "fat_g": 30
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4279,
+        "protein_g": 249.0,
+        "carb_g": 555.0,
+        "fat_g": 108.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-03-07",
+      "meals": [
+        {
+          "name": "Brunch (Portola)",
+          "kcal": 1924,
+          "protein_g": 109,
+          "carb_g": 184,
+          "fat_g": 82
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1944,
+          "protein_g": 96,
+          "carb_g": 265,
+          "fat_g": 52.5
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3868,
+        "protein_g": 205.0,
+        "carb_g": 449.0,
+        "fat_g": 134.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "meals": [
+        {
+          "name": "All meals",
+          "kcal": 2600,
+          "protein_g": 122,
+          "carb_g": 363,
+          "fat_g": 78
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3130,
+        "protein_g": 144.0,
+        "carb_g": 415.0,
+        "fat_g": 104.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-03-09",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 1917,
+          "protein_g": 143,
+          "carb_g": 167,
+          "fat_g": 66
+        },
+        {
+          "name": "Dinner (Carillo)",
+          "kcal": 1902,
+          "protein_g": 78,
+          "carb_g": 242,
+          "fat_g": 66
+        },
+        {
+          "name": "Shake",
+          "kcal": 530,
+          "protein_g": 22,
+          "carb_g": 52,
+          "fat_g": 26
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4349,
+        "protein_g": 243.0,
+        "carb_g": 461.0,
+        "fat_g": 158.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-03-10",
+      "meals": [
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2560,
+          "protein_g": 185,
+          "carb_g": 263,
+          "fat_g": 70
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1935,
+          "protein_g": 75,
+          "carb_g": 268,
+          "fat_g": 55
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4495,
+        "protein_g": 260.0,
+        "carb_g": 531.0,
+        "fat_g": 125.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-03-11",
+      "meals": [
+        {
+          "name": "Lunch (Carrillo)",
+          "kcal": 1846,
+          "protein_g": 128,
+          "carb_g": 284,
+          "fat_g": 53,
+          "sat_fat_g": 15,
+          "fiber_g": 25,
+          "sugar_g": 53.9,
+          "chol_mg": 260,
+          "sodium_mg": 4510,
+          "potassium_mg": 1910,
+          "items": [
+            {
+              "name": "Chicken Biryani",
+              "serving": "Piece (283g)",
+              "kcal": 343,
+              "protein_g": 19,
+              "carb_g": 33,
+              "fat_g": 15
+            },
+            {
+              "name": "Vegetable & Noodle Stir Fry (vgn)",
+              "serving": "5x Cup (195g)",
+              "kcal": 695,
+              "protein_g": 49,
+              "carb_g": 183,
+              "fat_g": 7
+            },
+            {
+              "name": "Grilled Chicken Taco",
+              "serving": "4x Taco (80g)",
+              "kcal": 649,
+              "protein_g": 58,
+              "carb_g": 49,
+              "fat_g": 22
+            },
+            {
+              "name": "Shoestring Fries (vgn)",
+              "serving": "Boat (99g)",
+              "kcal": 159,
+              "protein_g": 2,
+              "carb_g": 19,
+              "fat_g": 9
+            }
+          ]
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 2620,
+          "protein_g": 174,
+          "carb_g": 275,
+          "fat_g": 88,
+          "sat_fat_g": 28.5,
+          "fiber_g": 18.7,
+          "sugar_g": 48,
+          "chol_mg": 785,
+          "sodium_mg": 2135,
+          "potassium_mg": 2795,
+          "items": [
+            {
+              "name": "Meatloaf",
+              "serving": "Slice (110g)",
+              "kcal": 207,
+              "protein_g": 20,
+              "carb_g": 8,
+              "fat_g": 11
+            },
+            {
+              "name": "Mushroom Stroganoff (v)",
+              "serving": "4x 3/4 Cup (214g)",
+              "kcal": 894,
+              "protein_g": 25,
+              "carb_g": 135,
+              "fat_g": 29
+            },
+            {
+              "name": "Chicken Chop Suey",
+              "serving": "4x 6.5 oz (248g)",
+              "kcal": 1165,
+              "protein_g": 126,
+              "carb_g": 85,
+              "fat_g": 31
+            },
+            {
+              "name": "French Crumb Apple Pie (vgn)",
+              "serving": "Slice (129g)",
+              "kcal": 354,
+              "protein_g": 3,
+              "carb_g": 47,
+              "fat_g": 17
+            }
+          ]
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4466,
+        "protein_g": 302.0,
+        "carb_g": 559.0,
+        "fat_g": 141.0,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-03-12",
+      "meals": [
+        {
+          "name": "Lunch",
+          "kcal": 2600,
+          "protein_g": 136.7,
+          "carb_g": 301.5,
+          "fat_g": 93.3,
+          "imputed": true
+        },
+        {
+          "name": "Dinner",
+          "kcal": 2080,
+          "protein_g": 109.4,
+          "carb_g": 241.2,
+          "fat_g": 74.6,
+          "imputed": true
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4680,
+        "protein_g": 246.1,
+        "carb_g": 542.7,
+        "fat_g": 167.9,
+        "complete_log": false
+      }
+    },
+    {
+      "date": "2026-03-13",
+      "meals": [
+        {
+          "name": "Lunch",
+          "kcal": 1800,
+          "protein_g": 94.7,
+          "carb_g": 208.7,
+          "fat_g": 64.6,
+          "imputed": true
+        },
+        {
+          "name": "Dinner",
+          "kcal": 3000,
+          "protein_g": 157.8,
+          "carb_g": 347.9,
+          "fat_g": 107.6,
+          "imputed": true
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4800,
+        "protein_g": 252.5,
+        "carb_g": 556.6,
+        "fat_g": 172.2,
+        "complete_log": false
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "meals": [
+        {
+          "name": "Lunch",
+          "kcal": 2000,
+          "protein_g": 105.2,
+          "carb_g": 231.9,
+          "fat_g": 71.8,
+          "imputed": true
+        },
+        {
+          "name": "Dinner",
+          "kcal": 2400,
+          "protein_g": 126.2,
+          "carb_g": 278.3,
+          "fat_g": 86.1,
+          "imputed": true
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4400,
+        "protein_g": 231.4,
+        "carb_g": 510.2,
+        "fat_g": 157.9,
+        "complete_log": false
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "meals": [
+        {
+          "name": "Brunch (DLG)",
+          "kcal": 1610,
+          "protein_g": 108,
+          "carb_g": 143,
+          "fat_g": 66,
+          "sat_fat_g": 17.5,
+          "fiber_g": 11,
+          "sugar_g": 16,
+          "chol_mg": 1090,
+          "sodium_mg": 1750,
+          "potassium_mg": 3900,
+          "items": [
+            {
+              "name": "Beef Stroganoff",
+              "serving": "3x 3/4 Cup (198g)",
+              "kcal": 764,
+              "protein_g": 67,
+              "carb_g": 49,
+              "fat_g": 30
+            },
+            {
+              "name": "Cage Free Scrambled Eggs (v)",
+              "serving": "2x 1/2 Cup (116g)",
+              "kcal": 391,
+              "protein_g": 30,
+              "carb_g": 0,
+              "fat_g": 28
+            },
+            {
+              "name": "Hash Browns (vgn)",
+              "serving": "4x 1/2 Cup (119g)",
+              "kcal": 455,
+              "protein_g": 11,
+              "carb_g": 94,
+              "fat_g": 8
+            }
+          ]
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1987,
+          "protein_g": 83,
+          "carb_g": 302,
+          "fat_g": 43.5,
+          "sat_fat_g": 12.5,
+          "fiber_g": 20.7,
+          "sugar_g": 4,
+          "chol_mg": 120,
+          "sodium_mg": 1505,
+          "potassium_mg": 2060,
+          "items": [
+            {
+              "name": "Roasted Potato Wedges (vgn)",
+              "serving": "1/2 Cup (123g)",
+              "kcal": 164,
+              "protein_g": 2,
+              "carb_g": 23,
+              "fat_g": 7
+            },
+            {
+              "name": "Beef Chili Colorado Burrito",
+              "serving": "2x Burrito (217g)",
+              "kcal": 779,
+              "protein_g": 49,
+              "carb_g": 96,
+              "fat_g": 20
+            },
+            {
+              "name": "Mexican Rice (vgn)",
+              "serving": "1/2 Cup (71g)",
+              "kcal": 76,
+              "protein_g": 2,
+              "carb_g": 15,
+              "fat_g": 0
+            },
+            {
+              "name": "Flour Tortilla (vgn)",
+              "serving": "Tortilla (62g)",
+              "kcal": 200,
+              "protein_g": 5,
+              "carb_g": 32,
+              "fat_g": 5
+            },
+            {
+              "name": "Olive Pizza (v)",
+              "serving": "Slice (101g)",
+              "kcal": 256,
+              "protein_g": 13,
+              "carb_g": 28,
+              "fat_g": 10
+            },
+            {
+              "name": "Long Grain Rice (vgn)",
+              "serving": "4x 1/2 Cup (104g)",
+              "kcal": 512,
+              "protein_g": 12,
+              "carb_g": 108,
+              "fat_g": 1.5
+            }
+          ]
+        }
+      ],
+      "daily_totals": {
+        "kcal": 3597,
+        "protein_g": 191.0,
+        "carb_g": 445.0,
+        "fat_g": 109.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-03-17",
+      "meals": [
+        {
+          "name": "Lunch (Carrillo)",
+          "kcal": 2447,
+          "protein_g": 120,
+          "carb_g": 248,
+          "fat_g": 118.5,
+          "sat_fat_g": 50,
+          "fiber_g": 17.5,
+          "sugar_g": 33,
+          "chol_mg": 290,
+          "sodium_mg": 3215,
+          "potassium_mg": 2435,
+          "items": [
+            {
+              "name": "Beef Chow Mein",
+              "serving": "Cup (225g)",
+              "kcal": 181,
+              "protein_g": 18,
+              "carb_g": 33,
+              "fat_g": 3
+            },
+            {
+              "name": "Vegetable Chow Mein (vgn)",
+              "serving": "7 oz (223g)",
+              "kcal": 155,
+              "protein_g": 8,
+              "carb_g": 37,
+              "fat_g": 3.5
+            },
+            {
+              "name": "Filipino Style Barbecue Chicken",
+              "serving": "Drumstick (209g)",
+              "kcal": 381,
+              "protein_g": 16,
+              "carb_g": 29,
+              "fat_g": 21
+            },
+            {
+              "name": "Sticky Rice (vgn)",
+              "serving": "2x 1/2 Cup (71g)",
+              "kcal": 138,
+              "protein_g": 3,
+              "carb_g": 30,
+              "fat_g": 0
+            },
+            {
+              "name": "Pasta Pronto (vgn)",
+              "serving": "3x 3/4 Cup (173g)",
+              "kcal": 471,
+              "protein_g": 16,
+              "carb_g": 69,
+              "fat_g": 14
+            },
+            {
+              "name": "Quesadilla (v)",
+              "serving": "3x Quesadilla (130g)",
+              "kcal": 1121,
+              "protein_g": 59,
+              "carb_g": 50,
+              "fat_g": 77
+            }
+          ]
+        },
+        {
+          "name": "Dinner (Portola)",
+          "kcal": 2103,
+          "protein_g": 139,
+          "carb_g": 229,
+          "fat_g": 63,
+          "sat_fat_g": 25,
+          "fiber_g": 16,
+          "sugar_g": 19,
+          "chol_mg": 330,
+          "sodium_mg": 4030,
+          "potassium_mg": 2760,
+          "items": [
+            {
+              "name": "Chicken Florentine Pizza w/White Sauce",
+              "serving": "4x Slice (117g)",
+              "kcal": 1114,
+              "protein_g": 55,
+              "carb_g": 115,
+              "fat_g": 45
+            },
+            {
+              "name": "Beef Stew",
+              "serving": "7x 5.93 oz (171g)",
+              "kcal": 676,
+              "protein_g": 78,
+              "carb_g": 47,
+              "fat_g": 18
+            },
+            {
+              "name": "Mushroom Risotto (vgn)",
+              "serving": "Cup (255g)",
+              "kcal": 110,
+              "protein_g": 2,
+              "carb_g": 22,
+              "fat_g": 0
+            },
+            {
+              "name": "Jasmine Rice (vgn)",
+              "serving": "2x 1/2 Cup (71g)",
+              "kcal": 203,
+              "protein_g": 4,
+              "carb_g": 45,
+              "fat_g": 0
+            }
+          ]
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4550,
+        "protein_g": 259.0,
+        "carb_g": 477.0,
+        "fat_g": 181.5,
+        "complete_log": true
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "bw_lbs": 175.9,
+      "notes": "last day of logging; 80kg milestone",
+      "meals": [
+        {
+          "name": "Breakfast (DLG)",
+          "kcal": 875,
+          "protein_g": 39,
+          "carb_g": 74,
+          "fat_g": 46,
+          "sat_fat_g": 14,
+          "fiber_g": 5.7,
+          "sugar_g": 7.72,
+          "chol_mg": 715,
+          "sodium_mg": 810,
+          "potassium_mg": 1760,
+          "items": [
+            {
+              "name": "Cage Free Scrambled Eggs Vegetables (v)",
+              "serving": "1/2 Cup (131g)",
+              "kcal": 128,
+              "protein_g": 10,
+              "carb_g": 3,
+              "fat_g": 8
+            },
+            {
+              "name": "Cage Free Scrambled Eggs (v)",
+              "serving": "1/2 Cup (116g)",
+              "kcal": 196,
+              "protein_g": 15,
+              "carb_g": 0,
+              "fat_g": 14
+            },
+            {
+              "name": "Sausage Link",
+              "serving": "2 Links (45g)",
+              "kcal": 192,
+              "protein_g": 7,
+              "carb_g": 0,
+              "fat_g": 18
+            },
+            {
+              "name": "Diced Potatoes with Onions (vgn)",
+              "serving": "3x 1/2 Cup (117g)",
+              "kcal": 359,
+              "protein_g": 7,
+              "carb_g": 71,
+              "fat_g": 6
+            }
+          ]
+        },
+        {
+          "name": "Lunch (DLG)",
+          "kcal": 2067,
+          "protein_g": 114,
+          "carb_g": 245,
+          "fat_g": 59.5,
+          "sat_fat_g": 19,
+          "fiber_g": 13,
+          "sugar_g": 22.76,
+          "chol_mg": 255,
+          "sodium_mg": 4150,
+          "potassium_mg": 1635,
+          "items": [
+            {
+              "name": "Sweet Corn Tamale Casserole (vgn)",
+              "serving": "Piece (147g)",
+              "kcal": 190,
+              "protein_g": 3,
+              "carb_g": 34,
+              "fat_g": 4.5
+            },
+            {
+              "name": "Mexican Rice (vgn)",
+              "serving": "3x 1/2 Cup (71g)",
+              "kcal": 227,
+              "protein_g": 5,
+              "carb_g": 46,
+              "fat_g": 1
+            },
+            {
+              "name": "Buffalo Chicken Pizza",
+              "serving": "2x Slice (160g)",
+              "kcal": 616,
+              "protein_g": 47,
+              "carb_g": 51,
+              "fat_g": 22
+            },
+            {
+              "name": "Linguini Pasta (vgn)",
+              "serving": "4x 1/3 Cup (85g)",
+              "kcal": 568,
+              "protein_g": 18,
+              "carb_g": 104,
+              "fat_g": 4
+            },
+            {
+              "name": "Meat Sauce",
+              "serving": "4x 3 oz Ladle (84g)",
+              "kcal": 466,
+              "protein_g": 41,
+              "carb_g": 10,
+              "fat_g": 28
+            }
+          ]
+        },
+        {
+          "name": "Dinner (DLG)",
+          "kcal": 1292,
+          "protein_g": 132,
+          "carb_g": 99,
+          "fat_g": 38.5,
+          "sat_fat_g": 11,
+          "fiber_g": 5,
+          "sugar_g": 25,
+          "chol_mg": 355,
+          "sodium_mg": 2140,
+          "potassium_mg": 1565,
+          "items": [
+            {
+              "name": "Mexican Rice (vgn)",
+              "serving": "2x 1/2 Cup (71g)",
+              "kcal": 152,
+              "protein_g": 4,
+              "carb_g": 30,
+              "fat_g": 0.5
+            },
+            {
+              "name": "Buffalo Chicken Pizza",
+              "serving": "Slice (160g)",
+              "kcal": 308,
+              "protein_g": 24,
+              "carb_g": 26,
+              "fat_g": 11
+            },
+            {
+              "name": "Korean Spicy Chicken Stew",
+              "serving": "3x 6 oz (177g)",
+              "kcal": 832,
+              "protein_g": 104,
+              "carb_g": 43,
+              "fat_g": 27
+            }
+          ]
+        }
+      ],
+      "daily_totals": {
+        "kcal": 4234,
+        "protein_g": 285.0,
+        "carb_g": 418.0,
+        "fat_g": 144.0,
+        "complete_log": true
+      }
+    }
+  ]
+}
