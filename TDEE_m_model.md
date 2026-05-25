@@ -44,7 +44,7 @@ $$\text{TDEE} = B + \text{TEF} + E_{\text{RT}} + E_{\text{bike}} + E_{\text{walk
 |---|---|---|
 | $\text{TDEE}$ | $\mathbb{R}^+$, kcal/day | Total daily energy expenditure — pure energy balance; no tissue synthesis cost included. Essentially energy required to maintian same weight. |
 | $N_{\text{opt}}(t)$ | $\mathbb{R}^+$, kcal/day | **Nutrient partitioning optimum** — daily-varying; $N_{\text{opt}}(t) = \text{TDEE}(t) + \delta_{\text{syn}}(t)$ where $\delta_{\text{syn}}(t) \geq 0$ is the stimulus-dependent anabolic overhead (ATP cost of MPS, glycogen resynthesis, connective tissue turnover). Peaks on high-volume training days; approaches TDEE on full rest days. Represents the theoretical ceiling of gained weight with zero fat storage. |
-| $C_{\text{bulk}}$ | $\mathbb{R}^+$, kcal/day | **Practical bulk target** — $C_{\text{bulk}} = N_{\text{opt}}(t) + \varepsilon$, where $\varepsilon \in [100, 300]$ kcal/day. Buffer exists because (1) $N_{\text{opt}}$ is unobservable directly, (2) TDEE estimation error from $E_{\text{NEAT}}$ variance can accidentally erase the surplus, and (3) being marginally below $N_{\text{opt}}$ costs tissue; being marginally above costs only minor fat accrual. Asymmetric loss function favors erring high.  |
+| $C_{\text{bulk}}$ | $\mathbb{R}^+$, kcal/day | **Practical bulk target** — $C_{\text{bulk}} = N_{\text{opt}}(t) + \varepsilon$, where $\varepsilon \in [100, 300]$ kcal/day. Buffer exists because (1) $N_{\text{opt}}$ is unobservable directly, (2) TDEE estimation error from $E_{\text{NEAT}}$ variance can accidentally erase the surplus, and (3) being marginally below $N_{\text{opt}}$ costs potential tissue growth; being marginally above costs only minor fat accrual. Asymmetric loss function favors erring high.  |
 
 
 ### Hierarchy
@@ -55,34 +55,42 @@ The gap $N_{\text{opt}} - \text{TDEE} = \delta_{\text{syn}}(t)$ is what most def
 
 $C_{\text{bulk}}$ must be set relative to the **peak** of $N_{\text{opt}}(t)$ across the training week — not the average — so that $\varepsilon > 0$ is preserved even on highest-stimulus days.
 
+---
+
+### Below $N_{\text{opt}}$: Soft Threshold, Not Hard Cliff
+
+Being below $N_{\text{opt}}$ does not discretely destroy existing tissue. The effect is a **continuous attenuation of adaptation yield**:
+
+$$\text{Adaptation yield} \approx f\!\left(\frac{C_{\text{intake}}}{N_{\text{opt}}(t)}\right)$$
+
+where $f$ is concave increasing — steeply rising as intake approaches $N_{\text{opt}}$ from below, flattening above it. Underfunding manifests as:
+
+- Incomplete MPS despite adequate stimulus
+- Substrate reallocation: dietary protein oxidized for energy rather than incorporated into new tissue
+- Downregulation of anabolic signaling (IGF-1, testosterone:cortisol ratio), attenuating stimulus-response coupling itself
+
+---
+
+### Asymmetric Loss Function
+
+The rational justification for targeting $C_{\text{bulk}} > N_{\text{opt}}$ rather than $N_{\text{opt}}$ exactly:
+
+| Deviation | Cost | Reversible? |
+|---|---|---|
+| $C_{\text{intake}} < N_{\text{opt}}$ by 100 kcal | Adaptation yield from that training block permanently reduced | **No** — missed tissue accrual cannot be recovered retroactively |
+| $C_{\text{intake}} > N_{\text{opt}}$ by 100 kcal | Minor fat accrual | **Yes** — removable in a subsequent cut |
+
+Undershooting has irreversible cost; overshooting has reversible cost. Therefore $C_{\text{bulk}} = N_{\text{opt}}^{\text{peak}} + \varepsilon$ with $\varepsilon \in [100, 300]$ kcal/day is the dominant policy under uncertainty about the true value of $N_{\text{opt}}(t)$.
+
 ## Deeper Geometric Intepretation 
 ### I. Label manifold: a TDEE-parameterized embedded 1-manifold $M⊂\mathbb{R^3}$ 
 where: 
 $$
-\mathcal{M}
-=
-\left\{
-(\mathrm{TDEE}, N_{\mathrm{opt}}, C_{\mathrm{bulk}})
-\in \mathbb{R}^3
-\;\middle|\;
-N_{\mathrm{opt}}
-=
-\mathrm{TDEE}
-+
-\delta_{\mathrm{syn}},
-\;
-C_{\mathrm{bulk}}
-=
-N_{\mathrm{opt}}
-+
-\varepsilon
-\right\}
+\mathcal{M}=\left\{(\mathrm{TDEE}, N_{\mathrm{opt}}, C_{\mathrm{bulk}})\in \mathbb{R}^3\;\middle|\;N_{\mathrm{opt}}=\mathrm{TDEE}+\delta_{\mathrm{syn}},\;C_{\mathrm{bulk}}=N_{\mathrm{opt}}+\varepsilon\right\}
 $$
 
 $$
-\mathcal{M}
-\subset
-\mathbb{R}^3
+\mathcal{M}\subset\mathbb{R}^3
 $$
 ### II. Parametric Curve (Geometrically representing a line within the first octant)
 $$
@@ -90,33 +98,18 @@ $$
 $$
 
 $$
-\gamma(\mathrm{TDEE})
-=
-\left(
-\mathrm{TDEE},
-N_{\mathrm{opt}}(\mathrm{TDEE}),
-C_{\mathrm{bulk}}(\mathrm{TDEE})
-\right)
+\gamma(\mathrm{TDEE})=\left<\mathrm{TDEE},N_{\mathrm{opt}}(\mathrm{TDEE}),C_{\mathrm{bulk}}(\mathrm{TDEE})\right>
 $$
 
 with
 
 $$
-N_{\mathrm{opt}}
-=
-\mathrm{TDEE}
-+
-\delta_{\mathrm{syn}}
+N_{\mathrm{opt}}=\mathrm{TDEE}+\delta_{\mathrm{syn}}
 $$
 
 $$
-C_{\mathrm{bulk}}
-=
-N_{\mathrm{opt}}
-+
-\varepsilon
+C_{\mathrm{bulk}}=N_{\mathrm{opt}}+\varepsilon
 $$
-
 
  
 
