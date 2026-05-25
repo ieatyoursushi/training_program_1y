@@ -20,9 +20,9 @@ deadlift day: legs & back 100%
 - 335 x 3 @ RPE 7.5-8 - rest 10 min
 - 315 x 3 @ RPE 8.0 
 
-- 
+rest of days: went significantly better than week 1 / significantly better recovery as well, load on hamstrings was lightened, day 4 back/erectors heavier loads for the week, hip thrusts were skipped this week and in week 1. If correct this will be very good for week 3 deadlift which will be the most intense session. Week 1 disproportionate fatigue dissapated as åfter day 1 session. The sympton of elevated cortisol/sympathetic activation over the night by day 4 was stronger this week than last week however. Chest also had major improvements in fatigue management despite 3x frequency.
 
 # Week 3:
-
+- instead of monday first day (deadlift day) starts on tuesday due so an extra natural rest day to recover from week 2 fatigue.
 
 
