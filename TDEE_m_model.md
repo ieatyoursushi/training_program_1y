@@ -16,24 +16,109 @@ The commute is non-negotiable and stacks on top of both.
 
 ---
 
-## Vector Space: $\mathbb{R^{12}}$
+## Mechanistic Feature Space $\in \mathbb{R}^{11}$
 
 | Symbol | Type | Meaning |
 |---|---|---|
-| $\text{TDEE}$ | $\mathbb{R^+}$, kcal/day | Total daily energy expenditure |
-| $B$ | $\mathbb{R^+}$, kcal/day | Basal metabolic rate |
-| $\text{TEF}$ | $\mathbb{R^+}$, kcal/day | Thermic effect of food |
-| $E_{\text{RT}}$ | $\mathbb{R^+}$, kcal/day (averaged) | Resistance training expenditure |
-| $E_{\text{bike}}$ | $\mathbb{R^+}$, kcal/day | Biking commute expenditure |
-| $E_{\text{walk}}$ | $\mathbb{R^+}$, kcal/day | Walking/step expenditure |
-| $E_{\text{NEAT}}$ | $\mathbb{R^+}$, kcal/day | Incidental NEAT (fidgeting, restlessness) |
-| $\Delta E_{\text{interact}}$ | $\mathbb{R^+}$, kcal/day | Interaction term: fatigue-compounded cardio cost |
-| $m_b$ | $\mathbb{R^+}$, kg | Body mass (80 kg) |
-| $m_L$ | $\mathbb{R^+}$, kg | External load / backpack (13.6 kg ≈ 30 lb) |
-| $\eta$ | $\mathbb{R}$, dimensionless ∈ (0,1) | Muscle mechanical efficiency |
-| $W_{\text{mech}}$ | $\mathbb{R^+}$, J or kcal | Mechanical work output (locomotion) |
+| $B$ | $\mathbb{R}^+$, kcal/day | Basal metabolic rate |
+| $\text{TEF}$ | $\mathbb{R}^+$, kcal/day | Thermic effect of food (~10% of $C_{\text{bulk}}$) |
+| $E_{\text{RT}}$ | $\mathbb{R}^+$, kcal/day | Resistance training expenditure (session-averaged) |
+| $E_{\text{bike}}$ | $\mathbb{R}^+$, kcal/day | Loaded biking commute expenditure; depends on $m_b + m_L$ |
+| $E_{\text{walk}}$ | $\mathbb{R}^+$, kcal/day | Walking/step expenditure; scales with $m_b + m_L$ and daily step count |
+| $E_{\text{NEAT}}$ | $\mathbb{R}^+$, kcal/day | Unstructured incidental NEAT (fidgeting, restlessness); primary high-variance leakage term |
+| $\Delta E_{\text{interact}}$ | $\mathbb{R}^+$, kcal/day | Interaction term: fatigue-compounded locomotion cost (post-RT commute overhead not captured by independent sum) |
+| $m_b$ | $\mathbb{R}^+$, kg | Body mass (80 kg) |
+| $m_L$ | $\mathbb{R}^+$, kg | External load / backpack ($\approx$ 13.6 kg) |
+| $\eta$ | $(0,1)$, dimensionless | Muscle mechanical efficiency; modulates $W_{\text{mech}} \to E_{\text{bike}}, E_{\text{walk}}$ conversion |
+| $W_{\text{mech}}$ | $\mathbb{R}^+$, kcal | Mechanical work output during locomotion; input to efficiency-adjusted expenditure terms |
+
+$$\text{TDEE} = B + \text{TEF} + E_{\text{RT}} + E_{\text{bike}} + E_{\text{walk}} + E_{\text{NEAT}} + \Delta E_{\text{interact}}$$
+
+> **Note:** Standard TDEE formulas collapse all activity terms into a single multiplier on $B$. This decomposition is mechanistic — each term has a distinct physiological origin and different day-to-day variance profile. $E_{\text{NEAT}}$ is the dominant source of estimation error.
 
 ---
+
+## Label Space (Embedded 1-manifold in $\mathbb{R}^3$)
+
+| Symbol | Type | Meaning |
+|---|---|---|
+| $\text{TDEE}$ | $\mathbb{R}^+$, kcal/day | Total daily energy expenditure — pure energy balance; no tissue synthesis cost included. Essentially energy required to maintian same weight. |
+| $N_{\text{opt}}(t)$ | $\mathbb{R}^+$, kcal/day | **Nutrient partitioning optimum** — daily-varying; $N_{\text{opt}}(t) = \text{TDEE}(t) + \delta_{\text{syn}}(t)$ where $\delta_{\text{syn}}(t) \geq 0$ is the stimulus-dependent anabolic overhead (ATP cost of MPS, glycogen resynthesis, connective tissue turnover). Peaks on high-volume training days; approaches TDEE on full rest days. Represents the theoretical ceiling of gained weight with zero fat storage. |
+| $C_{\text{bulk}}$ | $\mathbb{R}^+$, kcal/day | **Practical bulk target** — $C_{\text{bulk}} = N_{\text{opt}}(t) + \varepsilon$, where $\varepsilon \in [100, 300]$ kcal/day. Buffer exists because (1) $N_{\text{opt}}$ is unobservable directly, (2) TDEE estimation error from $E_{\text{NEAT}}$ variance can accidentally erase the surplus, and (3) being marginally below $N_{\text{opt}}$ costs tissue; being marginally above costs only minor fat accrual. Asymmetric loss function favors erring high.  |
+
+
+### Hierarchy
+
+$$\text{TDEE}(t) \leq N_{\text{opt}}(t) \leq C_{\text{bulk}}$$
+
+The gap $N_{\text{opt}} - \text{TDEE} = \delta_{\text{syn}}(t)$ is what most definitions of "maintenance" omit. It is small (~100–300 kcal on hard training days) but nonzero, and it is the quantity that distinguishes *energy maintenance* from *anabolic maintenance*.
+
+$C_{\text{bulk}}$ must be set relative to the **peak** of $N_{\text{opt}}(t)$ across the training week — not the average — so that $\varepsilon > 0$ is preserved even on highest-stimulus days.
+
+## Deeper Geometric Intepretation 
+### I. Label manifold: a TDEE-parameterized embedded 1-manifold $M⊂\mathbb{R^3}$ 
+where: 
+$$
+\mathcal{M}
+=
+\left\{
+(\mathrm{TDEE}, N_{\mathrm{opt}}, C_{\mathrm{bulk}})
+\in \mathbb{R}^3
+\;\middle|\;
+N_{\mathrm{opt}}
+=
+\mathrm{TDEE}
++
+\delta_{\mathrm{syn}},
+\;
+C_{\mathrm{bulk}}
+=
+N_{\mathrm{opt}}
++
+\varepsilon
+\right\}
+$$
+
+$$
+\mathcal{M}
+\subset
+\mathbb{R}^3
+$$
+### II. Parametric Curve (Geometrically representing a line within the first octant)
+$$
+\gamma:\mathbb{R}^+\rightarrow\mathbb{R}^3
+$$
+
+$$
+\gamma(\mathrm{TDEE})
+=
+\left(
+\mathrm{TDEE},
+N_{\mathrm{opt}}(\mathrm{TDEE}),
+C_{\mathrm{bulk}}(\mathrm{TDEE})
+\right)
+$$
+
+with
+
+$$
+N_{\mathrm{opt}}
+=
+\mathrm{TDEE}
++
+\delta_{\mathrm{syn}}
+$$
+
+$$
+C_{\mathrm{bulk}}
+=
+N_{\mathrm{opt}}
++
+\varepsilon
+$$
+
+
+ 
 
 ## Component 1 — Basal Metabolic Rate (B)
 
