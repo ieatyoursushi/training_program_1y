@@ -98,7 +98,7 @@ $$
 $$
 
 $$
-\gamma(\mathrm{TDEE})=\left<\mathrm{TDEE},N_{\mathrm{opt}}(\mathrm{TDEE}),C_{\mathrm{bulk}}(\mathrm{TDEE})\right>
+\gamma(\mathrm{TDEE})=\left<\mathrm{TDEE},(\mathrm{TDEE} + \delta_{\mathrm{syn}}),(\mathrm{TDEE} + \delta_{\mathrm{syn}} + \varepsilon)\right>
 $$
 
 with
