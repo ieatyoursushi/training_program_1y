@@ -64,6 +64,15 @@ rest of the week: [...]
 
 # Taper week
 
+activation session 72h before PR day:
+### Tonnage:
+```
+315 x 1 @ RPE ??? (lockout acceleartes slightly followed by joint sharpness)
+315 x 1 @ RPE ???  (lockout accelerates slighgly)
+225 x 1 paused at knee (sharp joint pain but managable / not injurious)
+225 x 1 to unrack (no sharp pain at all, sharp pain likely caused by acceleartion from joints still remodeling)
+```
+
 ...
 
 # Block 2 (stabilized from block 1's adaptations likely):
@@ -86,3 +95,26 @@ PR Warm-Up Schema:
 415-425 x 1 - PR attempt (Lift 2 RPE 9-10)
 440 x 1 PR attempt (Lift 3) (185+ bodyweight likely needed or some miracle so unlikely to hit or even attempt this block, RPE 10+)
 ```
+### PR-day results:
+
+weak point identified: tranasition from leg drive to hip extension just above the knees, not lockout. This is sort of a "a chain is only as strong as its weakest link" in this case I have identified an asymmetrically weak technique compensation or contractile tissue weawk point or a mix of both that stopped me form expressing the full potential of my entire chain and a secret weak point that's existed since month 3 of training. This likely explains the discrepancy in patterns in all load types for my lifting profile (weak link also likely causes other parts of the chain to overcompensate as a result too), like where warm ups off the floor is the slowest with an accelearted lockout while the opposite pattern occurs near maximal loads (slow off the floor, lockout deceleartion).
+
+
+```
+warm ups: CNS still waking up (good)
+335 primer: smooth velocity but compensation pattern, CNS finally in sympathetic state
+365 final primer: fast off the floor and in midrange but suddenn strong deceleration at 75-80% that was liely caused by the same compensation pattern just that the sympton (knees rebending slighly and such) happened later in the lift. Rep didn't feel difficult until that sudden shift.
+405 PR attempt 1: 🔴🔴🔴
+
+fast off the floor and broke off the floor fast (for a maximal attempt) just like 365 but followed by a complete and unrpedictable stall at exactly the weak point I just identified, right above the knee aka right above the transition phase to hip extension where I had suddenly made a complete halt in that posion for multiple seconds (inability to transfer force to break that inertia this time around) and failing attempt #1, an attempt that definetly felt difficult but not completely maximal effort (like 355 x 2 was) until that sudden shift. Joints also didn't feel fully recovered coming into the sesiosn either from the brutal block done before the taper but felt recovered enough to attempt a maxed single.
+
+405 PR attempt 2 (10 minutes after attp 1): 🔴🔴🔴
+
+failed off the floor about a foot off the floor, joints (knee and lower back) said nope even though i felt some cns reserve left ending my 1 YoE PR day there.
+
+
+```
+
+Likely new approaches coming into my first block starting year 2: 
+- reduce grindy/difficult top sets where the weak point causes overcompensation
+- temporarily add submaximal top sets to directly train the weakest link of my deadlift chain RPE 6 max) liekly with targetting like tempo deadlift, paused below knee, block pulls. The usual argument for submax volume and frequency in advanced lifters is to build recovrerable stimulus to the connective tissue and all that stuff along the maximal force production argument / clean quality reps though formy case its moreso on targetting my asymetrically weak point (which is most liekly a technical compensation pattern I learned early in lifting one rather than a weak muscle group)
