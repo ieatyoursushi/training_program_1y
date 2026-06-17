@@ -211,7 +211,9 @@ Microcycle averages slightly below 1x per week for each lift with autoregulation
 ### Day 1: Heavy Deadlift + Back + Chest A
 
 **Primary:**
-- Deadlift 2-3 sets, 1-3 reps, RPE 7-8.5
+- Deadlift 1 top set, 1-3 reps, tRPE 7-9 (keeps heavy exposure maintanence / show compensation sympton, this top set ~80% per rep will be easier on average than last block's top sets such that fatigue is managed appropriately)
+- Deadlift 2-3 backoff sets 3-6 reps @ tRPE 5-6.5 (used to directly target my asymetrically weak point likely undoing an unoptimal compensation pattern)
+
 - Weighted pull-ups 2-3 sets / some sort of pull mechanic
 
 **Deadlift accessory:**
@@ -225,9 +227,23 @@ Microcycle averages slightly below 1x per week for each lift with autoregulation
 
 **Notes:** Chest work placed after pulling — anterior chain work generates zero axial or posterior chain interference. The CNS cost of moderate-rep DB press is low enough that it doesn't meaningfully compound deadlift day fatigue.
 
+- Oscillate RPE on deadlift top set rather than a fixed ish RPE, roughly looks like: 
+```
+Week 1
+tRPE 6.5-7
+
+Week 2
+tRPE 7-7.5
+
+Week 3
+tRPE 8
+
+Week 4
+tRPE 8.5-9
+```
 ---
 
-### Day 2: Heavy Bench + Shoulders
+### Day 2: Heavy Pressing + Shoulders
 
 **Primary:**
 - DB press or barbell bench 3-4 sets, 6-10 reps, RPE 7-8
@@ -247,6 +263,9 @@ Microcycle averages slightly below 1x per week for each lift with autoregulation
 ---
 
 ### Day 3: Leg Day (Interference-Minimized)
+
+**Secondary/Variation Deadlift work:**
+- Paused Deadlifts (right below knee / transition point) 2-3 sets, should be longer pause lighter load maximum tRPE 6. (it'll lok something like 245-285 x 2-5 1.0-2.0s pause, for shorter pauses 0.25-0.5s with 295-315 x 2-4)
 
 **Quad/hamstring maintenance:**
 - Leg extension 3-4 sets, 10-12 reps, RPE 7-8
