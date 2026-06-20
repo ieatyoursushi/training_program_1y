@@ -1,0 +1,72 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:StandardsCalculator.Desktop.ViewModels"
+             mc:Ignorable="d"
+             x:Class="StandardsCalculator.Desktop.Views.ExerciseSelectView"
+             x:DataType="vm:ExerciseSelectViewModel">
+
+  <Border Padding="32" Background="#1a1a1a">
+    <StackPanel MaxWidth="480" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="0">
+
+      <!-- Header -->
+      <TextBlock Text="Strength Standards Calculator"
+                 FontSize="22" FontWeight="SemiBold"
+                 Foreground="#e0e0e0" Margin="0,0,0,4"/>
+      <TextBlock Text="Data: strengthlevel.com  ·  Math: methods.md"
+                 FontSize="12" Foreground="#666" Margin="0,0,0,28"/>
+
+      <!-- Filter -->
+      <TextBlock Text="Filter exercises" FontSize="12" Foreground="#aaa" Margin="0,0,0,4"/>
+      <TextBox Text="{Binding FilterText}"
+               Watermark="e.g. deadlift, bench…"
+               Margin="0,0,0,12"
+               Background="#111" Foreground="#ddd"
+               BorderBrush="#333" CornerRadius="4"/>
+
+      <!-- Exercise list -->
+      <TextBlock Text="Select exercise" FontSize="12" Foreground="#aaa" Margin="0,0,0,4"/>
+      <Border Height="220" BorderBrush="#333" BorderThickness="1" CornerRadius="4" Background="#111">
+        <ListBox ItemsSource="{Binding Exercises}"
+                 SelectedItem="{Binding SelectedExercise}"
+                 Background="Transparent"
+                 SelectionMode="Single">
+          <ListBox.ItemTemplate>
+            <DataTemplate>
+              <TextBlock Text="{Binding}" FontSize="13" Foreground="#ccc" Padding="6,3"/>
+            </DataTemplate>
+          </ListBox.ItemTemplate>
+        </ListBox>
+      </Border>
+
+      <!-- Unit selector -->
+      <StackPanel Orientation="Horizontal" Margin="0,16,0,0" Spacing="16">
+        <TextBlock Text="Unit:" VerticalAlignment="Center" Foreground="#aaa" FontSize="13"/>
+        <RadioButton Content="lb"
+                     IsChecked="{Binding IsKg, Converter={x:Static BoolConverters.Not}}"
+                     Foreground="#ccc" FontSize="13"/>
+        <RadioButton Content="kg"
+                     IsChecked="{Binding IsKg}"
+                     Foreground="#ccc" FontSize="13"/>
+      </StackPanel>
+
+      <!-- Status -->
+      <TextBlock Text="{Binding StatusMessage}"
+                 FontSize="12" Foreground="#f08030"
+                 Margin="0,10,0,0"
+                 IsVisible="{Binding StatusMessage, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+
+      <!-- Continue button -->
+      <Button Content="  Continue →  "
+              Command="{Binding ContinueCommand}"
+              Margin="0,20,0,0"
+              HorizontalAlignment="Left"
+              FontSize="14" FontWeight="SemiBold"
+              Background="#2a5f8f" Foreground="#e0e0e0"
+              CornerRadius="4" Padding="16,8"
+              IsEnabled="{Binding !IsLoading}"/>
+
+    </StackPanel>
+  </Border>
+</UserControl>

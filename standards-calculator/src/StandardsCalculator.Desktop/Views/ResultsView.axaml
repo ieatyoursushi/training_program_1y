@@ -1,0 +1,264 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:StandardsCalculator.Desktop.ViewModels"
+             mc:Ignorable="d"
+             x:Class="StandardsCalculator.Desktop.Views.ResultsView"
+             x:DataType="vm:ResultsViewModel"
+             Background="#111">
+
+  <DockPanel>
+
+    <!-- ── Header bar ────────────────────────────────────────────────────── -->
+    <Border DockPanel.Dock="Top"
+            Background="#1a1a1a" Padding="16,10"
+            BorderBrush="#333" BorderThickness="0,0,0,1">
+      <DockPanel>
+        <Button Content="← Back"
+                DockPanel.Dock="Left"
+                Tag="Back"
+                FontSize="12" Foreground="#888" Background="Transparent"
+                BorderThickness="0" Cursor="Hand"
+                Click="OnBackClicked"/>
+        <TextBlock Text="{Binding ExerciseTitle}"
+                   FontSize="18" FontWeight="SemiBold"
+                   Foreground="#e0e0e0" VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+      </DockPanel>
+    </Border>
+
+    <!-- ── Main layout: inputs left, results right ─────────────────────── -->
+    <Grid ColumnDefinitions="300,*">
+
+      <!-- ── LEFT: Input form ──────────────────────────────────────────── -->
+      <ScrollViewer Grid.Column="0"
+                    Background="#181818"
+                    Padding="16">
+        <StackPanel Spacing="10">
+
+          <TextBlock Text="INPUTS" FontSize="10" FontWeight="Bold"
+                     Foreground="#555" LetterSpacing="2" Margin="0,0,0,2"/>
+
+          <!-- Gender -->
+          <StackPanel>
+            <TextBlock Text="Gender" FontSize="11" Foreground="#666" Margin="0,0,0,2"/>
+            <StackPanel Orientation="Horizontal" Spacing="16">
+              <RadioButton Content="Male"   IsChecked="{Binding IsMale}"
+                           Foreground="#ccc" FontSize="13"/>
+              <RadioButton Content="Female" IsChecked="{Binding IsMale, Converter={x:Static BoolConverters.Not}}"
+                           Foreground="#ccc" FontSize="13"/>
+            </StackPanel>
+          </StackPanel>
+
+          <!-- Age -->
+          <StackPanel>
+            <TextBlock Text="Age" FontSize="11" Foreground="#666" Margin="0,0,0,2"/>
+            <NumericUpDown Value="{Binding Age}" Minimum="10" Maximum="120"
+                           Increment="1" FormatString="0"
+                           Background="#111" Foreground="#ddd"
+                           BorderBrush="#333" CornerRadius="4" FontSize="13"/>
+          </StackPanel>
+
+          <!-- Bodyweight -->
+          <StackPanel>
+            <TextBlock Text="{Binding UnitLabel, StringFormat='Bodyweight ({0})'}"
+                       FontSize="11" Foreground="#666" Margin="0,0,0,2"/>
+            <NumericUpDown Value="{Binding Bodyweight}" Minimum="50" Maximum="600"
+                           Increment="1" FormatString="0.0"
+                           Background="#111" Foreground="#ddd"
+                           BorderBrush="#333" CornerRadius="4" FontSize="13"/>
+          </StackPanel>
+
+          <!-- Weight lifted -->
+          <StackPanel>
+            <TextBlock Text="{Binding UnitLabel, StringFormat='Weight lifted ({0})'}"
+                       FontSize="11" Foreground="#666" Margin="0,0,0,2"/>
+            <NumericUpDown Value="{Binding WeightLifted}" Minimum="1" Maximum="2000"
+                           Increment="5" FormatString="0.0"
+                           Background="#111" Foreground="#ddd"
+                           BorderBrush="#333" CornerRadius="4" FontSize="13"/>
+          </StackPanel>
+
+          <!-- Reps -->
+          <StackPanel>
+            <TextBlock Text="Reps" FontSize="11" Foreground="#666" Margin="0,0,0,2"/>
+            <NumericUpDown Value="{Binding Reps}" Minimum="1" Maximum="30"
+                           Increment="1" FormatString="0"
+                           Background="#111" Foreground="#ddd"
+                           BorderBrush="#333" CornerRadius="4" FontSize="13"/>
+          </StackPanel>
+
+          <Separator Background="#333" Margin="0,4"/>
+          <TextBlock Text="BODY COMPOSITION" FontSize="10" FontWeight="Bold"
+                     Foreground="#555" LetterSpacing="2" Margin="0,0,0,2"/>
+
+          <!-- Height -->
+          <StackPanel>
+            <TextBlock Text="Height (e.g. 6'1, 185, 1.85)" FontSize="11" Foreground="#666" Margin="0,0,0,2"/>
+            <TextBox Text="{Binding HeightInput}"
+                     Background="#111" Foreground="#ddd"
+                     BorderBrush="#333" CornerRadius="4" FontSize="13"/>
+            <TextBlock Text="{Binding HeightParseError}" FontSize="11" Foreground="#e05050"
+                       IsVisible="{Binding HeightParseError, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+          </StackPanel>
+
+          <!-- Body-fat % -->
+          <StackPanel>
+            <TextBlock Text="Body-fat %" FontSize="11" Foreground="#666" Margin="0,0,0,2"/>
+            <NumericUpDown Value="{Binding BodyFatPct}" Minimum="1" Maximum="60"
+                           Increment="0.5" FormatString="0.0"
+                           Background="#111" Foreground="#ddd"
+                           BorderBrush="#333" CornerRadius="4" FontSize="13"/>
+          </StackPanel>
+
+          <!-- FFMI (derived / editable) -->
+          <StackPanel>
+            <TextBlock Text="FFMI (derived — edit to back-solve)" FontSize="11" Foreground="#666" Margin="0,0,0,2"/>
+            <NumericUpDown Value="{Binding Ffmi}" Minimum="10" Maximum="35"
+                           Increment="0.1" FormatString="0.00"
+                           Background="#111" Foreground="#bbb"
+                           BorderBrush="#333" CornerRadius="4" FontSize="13"/>
+          </StackPanel>
+
+          <!-- Solve-for selector -->
+          <StackPanel>
+            <TextBlock Text="When editing FFMI, solve for:" FontSize="11" Foreground="#666" Margin="0,0,0,4"/>
+            <ComboBox ItemsSource="{Binding SolveForOptions}"
+                      SelectedIndex="{Binding SolveForIndex}"
+                      Background="#111" Foreground="#ccc"
+                      BorderBrush="#333" FontSize="12"/>
+          </StackPanel>
+
+          <Separator Background="#333" Margin="0,4"/>
+          <TextBlock Text="RESEARCH SETTINGS" FontSize="10" FontWeight="Bold"
+                     Foreground="#555" LetterSpacing="2" Margin="0,0,0,2"/>
+
+          <!-- Percentile model -->
+          <StackPanel>
+            <TextBlock Text="Percentile model" FontSize="11" Foreground="#666" Margin="0,0,0,4"/>
+            <StackPanel Orientation="Horizontal" Spacing="16">
+              <RadioButton Content="PCHIP spline (default)"
+                           IsChecked="{Binding UseLms, Converter={x:Static BoolConverters.Not}}"
+                           Foreground="#ccc" FontSize="12"/>
+              <RadioButton Content="LMS / BCCG"
+                           IsChecked="{Binding UseLms}"
+                           Foreground="#ccc" FontSize="12"/>
+            </StackPanel>
+            <TextBlock Text="{Binding LmsInfo}" FontSize="11" Foreground="#7ab" FontFamily="Menlo,Consolas,monospace"
+                       TextWrapping="Wrap" Margin="0,4,0,0"
+                       IsVisible="{Binding UseLms}"/>
+          </StackPanel>
+
+          <!-- FFMI equating method -->
+          <StackPanel>
+            <TextBlock Text="FFMI cross-sex method" FontSize="11" Foreground="#666" Margin="0,0,0,4"/>
+            <StackPanel Orientation="Horizontal" Spacing="16">
+              <RadioButton Content="Equipercentile (default)"
+                           IsChecked="{Binding UseCeilingRatio, Converter={x:Static BoolConverters.Not}}"
+                           Foreground="#ccc" FontSize="12"/>
+              <RadioButton Content="Ceiling-ratio"
+                           IsChecked="{Binding UseCeilingRatio}"
+                           Foreground="#ccc" FontSize="12"/>
+            </StackPanel>
+          </StackPanel>
+
+          <!-- Error -->
+          <TextBlock Text="{Binding ErrorMessage}" FontSize="12" Foreground="#e05050"
+                     TextWrapping="Wrap"
+                     IsVisible="{Binding ErrorMessage, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+
+        </StackPanel>
+      </ScrollViewer>
+
+      <!-- ── RIGHT: Two result panels ─────────────────────────────────── -->
+      <ScrollViewer Grid.Column="1" Padding="0">
+        <Grid RowDefinitions="*,*" Margin="16">
+
+          <!-- Self result panel -->
+          <Border Grid.Row="0"
+                  Background="#1a1a1a" CornerRadius="6" Padding="18"
+                  BorderBrush="#333" BorderThickness="1" Margin="0,0,0,12">
+            <StackPanel Spacing="6">
+              <TextBlock Text="{Binding SelfGenderLabel, StringFormat='── {0} Results ──'}"
+                         FontSize="14" FontWeight="SemiBold" Foreground="#e0e0e0"/>
+              <Separator Background="#333"/>
+
+              <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Level" Foreground="#888" FontSize="12" Margin="0,0,12,0"/>
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding SelfLevelText}" Foreground="#ddd" FontSize="12"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="" Foreground="#f0c040" FontSize="16" Margin="0,2,0,2"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding SelfStars}" Foreground="#f0c040" FontSize="16"/>
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Percentile" Foreground="#888" FontSize="12" Margin="0,0,12,0"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding SelfPercentile}" Foreground="#7af07a" FontSize="13" FontWeight="SemiBold"/>
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="1RM (Epley)" Foreground="#888" FontSize="12" Margin="0,0,12,0"/>
+                <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding SelfOneRepMax}" Foreground="#ddd" FontSize="12"/>
+
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="BW multiple" Foreground="#888" FontSize="12" Margin="0,0,12,0"/>
+                <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding SelfBwMultiple}" Foreground="#ddd" FontSize="12"/>
+
+                <TextBlock Grid.Row="5" Grid.Column="0" Text="Age coeff." Foreground="#888" FontSize="12" Margin="0,0,12,0"/>
+                <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding SelfAgeCoeff}" Foreground="#ddd" FontSize="12"/>
+              </Grid>
+
+              <Separator Background="#2a2a2a" Margin="0,4"/>
+              <TextBlock Text="Boundaries" Foreground="#666" FontSize="11"/>
+              <TextBlock Text="{Binding SelfBoundaries}"
+                         FontFamily="Menlo,Consolas,monospace" FontSize="11"
+                         Foreground="#aaa" TextWrapping="Wrap"/>
+            </StackPanel>
+          </Border>
+
+          <!-- Equivalent result panel -->
+          <Border Grid.Row="1"
+                  Background="#1a1e1a" CornerRadius="6" Padding="18"
+                  BorderBrush="#2a3a2a" BorderThickness="1">
+            <StackPanel Spacing="6">
+              <TextBlock Text="{Binding EquivGenderLabel, StringFormat='── Equivalent {0} ──'}"
+                         FontSize="14" FontWeight="SemiBold" Foreground="#c0e0c0"/>
+              <Separator Background="#2a3a2a"/>
+
+              <!-- Anthropometric bridge -->
+              <TextBlock Text="{Binding EquivHeight}"    FontSize="11" Foreground="#7ab" TextWrapping="Wrap"/>
+              <TextBlock Text="{Binding EquivBodyweight}" FontSize="11" Foreground="#7ab" TextWrapping="Wrap"/>
+              <TextBlock Text="{Binding EquivFfmi}"      FontSize="11" Foreground="#7ab" TextWrapping="Wrap"/>
+
+              <TextBlock Text="{Binding AbsEquivPercentile, StringFormat='Same absolute lift → {0}'}"
+                         FontSize="11" Foreground="#c0c0a0" Margin="0,4,0,0"/>
+
+              <Separator Background="#2a3a2a" Margin="0,4"/>
+              <TextBlock Text="For same percentile as you:" FontSize="11" Foreground="#888"/>
+
+              <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto">
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Level" Foreground="#888" FontSize="12" Margin="0,0,12,0"/>
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding EquivLevelText}" Foreground="#ddd" FontSize="12"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding EquivStars}" Foreground="#f0c040" FontSize="16"/>
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Percentile" Foreground="#888" FontSize="12" Margin="0,0,12,0"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding EquivPercentile}" Foreground="#7af07a" FontSize="13" FontWeight="SemiBold"/>
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Lift needed" Foreground="#888" FontSize="12" Margin="0,0,12,0"/>
+                <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding EquivOneRepMax}" Foreground="#ddd" FontSize="11" TextWrapping="Wrap"/>
+
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="BW multiple" Foreground="#888" FontSize="12" Margin="0,0,12,0"/>
+                <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding EquivBwMultiple}" Foreground="#ddd" FontSize="12"/>
+              </Grid>
+
+              <Separator Background="#2a3a2a" Margin="0,4"/>
+              <TextBlock Text="Boundaries" Foreground="#666" FontSize="11"/>
+              <TextBlock Text="{Binding EquivBoundaries}"
+                         FontFamily="Menlo,Consolas,monospace" FontSize="11"
+                         Foreground="#8aa" TextWrapping="Wrap"/>
+            </StackPanel>
+          </Border>
+
+        </Grid>
+      </ScrollViewer>
+
+    </Grid>
+  </DockPanel>
+</UserControl>
